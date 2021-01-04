@@ -3,26 +3,26 @@
 Vous pensez pouvoir faire mieux que le prof ?
 Voici votre chance.
 J'ai écrit un programme pour résoudre le problème posé.
-Écrivez un programme qui affiche la bonne réponse plus rapidement que le mien et c'est gagné.
+Écrivez un programme qui affiche la bonne réponse plus rapidement que le mien par une marge de 20% et c'est gagné.
 Si vous réussissez, ce sera *votre* programme que les étudiants auront à battre l'année prochaine !
 
 # Le problème
 
-Ce problème est tiré du livre «Doctor Ecco's cyberpuzzles» de Dennis E. Shasha.
+Ce problème est tiré du livre «[Doctor Ecco's cyberpuzzles](https://www.goodreads.com/book/show/82492.Doctor_Ecco_s_Cyberpuzzles)» de Dennis E. Shasha.
 
 Nous avons aujourd'hui les dénominations suivantes pour les pièces de monnaie de moins d'un euro : 1¢, 2¢, 5¢, 10¢, 20¢ et 50¢.
 Ces dénominations sont intuitives pour les humains.
 En effet, il nous est facile de calculer mentalement les pièces requises pour «donner le change».
 Seulement... ces dénominations ne sont pas optimales.
-En effet, pour tout les prix compris entre 1¢ et 99¢ le nombre de pièces que nous auront à donner en moyenne sera de 3,434343 pièces.
+En effet, pour tout les prix compris entre 1¢ et 99¢ le nombre de pièces que nous auront à débourser en moyenne sera de 3,434343 pièces.
 
 Il existe une suite de dénominations qui donne un meilleur résultat : 1¢, 2¢, 5¢, 11¢, 25¢ et 62¢.
-Pour ces dénominations, le nombre de pièces à donner en moyenne pour tout les prix compris entre 1¢ et 99¢ est de 3,1616.
-Évidement moins intuitifs à calculer pour les humains mais nous, nous  sommes des *programmeurs !*
+Pour ces dénominations, le nombre de pièces à donner en moyenne pour tout les prix compris entre 1¢ et 99¢ est de 3,1616 pièces.
+Évidement moins intuitifs à calculer pour des humains mais nous, nous  sommes des *programmeurs !*
 
 La question est la suivante : pour un ensemble D de N dénominations {D<sub>1</sub>, ..., D<sub>N</sub>} quelles sont les dénominations qui donnent en moyenne le plus petit nombre de pièces pour tout les prix compris entre 1¢ et 99¢ ?
 
-Le calcul du nombre de pièces requises est fait de façon simpe.
+Le calcul du nombre de pièces requises est fait de façon simple.
 Pour un prix P, le nombre de pièces requises R est calculé par R(P, D) = P / D<sub>N</sub> + (P - P / D<sub>N</sub>) / D<sub>N-1</sub> + ... .
 Par exemple :
 
@@ -50,3 +50,7 @@ Le votre sera dans le fichier `challenger.c`.
 La cible `make compete` va compiler les deux programmes et comparer leur temps d'exécution.
 Si votre temps d'exécution est en deçà du mien par 20% (T<sub>challenger</sub> / T<sub>champion</sub> < 0,8), contactez-moi vite !
 Bien sur, je vais aussi vérifier l'intégrité de votre programme...
+
+Il n'y pas de limites à ce que vous pouvez faire, en autant que votre programme puisse se compiler avec `gcc`.
+Je désire voir aussi une amélioration substantielle de la performance, pas seulement un programme qui «rogne» quelques millisecondes par-ci par-là, d'où le 20%. Mais sachez que je n'ai pas particulièrement optimisé mon programme, seulement écrit de façon plutôt naïve.
+
