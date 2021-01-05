@@ -1,6 +1,4 @@
-/champion
-/champion-debug
-/champion-debug.dSYM
-/champion-debug.out.dSYM
-/champion.out
-/debug.out.dSYM
+champion*
+!champion.c
+challenger*
+!challenger.c
