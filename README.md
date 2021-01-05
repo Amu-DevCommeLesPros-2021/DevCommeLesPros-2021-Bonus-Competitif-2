@@ -8,7 +8,7 @@ Si vous réussissez, ce sera *votre* programme que les étudiants auront à batt
 
 # Le problème
 
-Ce problème est tiré du livre «[Doctor Ecco's cyberpuzzles](https://www.goodreads.com/book/show/82492.Doctor_Ecco_s_Cyberpuzzles)» de Dennis E. Shasha.
+Ce problème est tiré du livre «[Doctor Ecco's cyberpuzzles](https://www.goodreads.com/book/show/82492.Doctor_Ecco_s_Cyberpuzzles)» de [Dennis E. Shasha](https://en.wikipedia.org/wiki/Dennis_Shasha).
 
 Nous avons aujourd'hui les dénominations suivantes pour les pièces de monnaie de moins d'un euro : 1¢, 2¢, 5¢, 10¢, 20¢ et 50¢.
 Ces dénominations sont intuitives pour les humains.
@@ -52,7 +52,7 @@ Mon programme se trouve dans le fichier `champion.c`.
 Le votre sera dans le fichier `challenger.c`.
 
 La cible `make compete` va compiler les deux programmes et comparer leur temps d'exécution.
-Si votre temps d'exécution est en deçà du mien d'au moins 10% (T<sub>challenger</sub> / T<sub>champion</sub> < 0,9), contactez-moi vite !
+Si votre temps d'exécution est en deçà du mien par au moins 10% (T<sub>challenger</sub> / T<sub>champion</sub> < 0,9), contactez-moi vite !
 Bien sur, je vais aussi vérifier l'intégrité de votre programme...
 
 Il n'y pas de limites à ce que vous pouvez faire, en autant que votre programme puisse être compilé avec un compilateur C.
