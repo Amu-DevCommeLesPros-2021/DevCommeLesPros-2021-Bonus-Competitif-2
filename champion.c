@@ -30,7 +30,7 @@ int n_coins_for_price(int const coin_set[], int const size_coin_set, int price)
 // 1 cent and 99 cents.
 float average_change(int const coin_set[], int const size_coin_set)
 {
-    int n_coins_for_prices[99] = {0};
+    int n_coins_for_prices[100] = {0};
 
     // For all prices from 1 cent to 99 cent, calculate the number of coins.
     for(int price = 1; price < 100; ++price)
