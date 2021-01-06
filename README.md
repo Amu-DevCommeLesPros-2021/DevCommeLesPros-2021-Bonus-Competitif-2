@@ -1,4 +1,4 @@
-#  Vous vous croyez fort ? Prouvez-le.
+#  Vous vous croyez fortiche ? Prouvez-le.
 
 Vous pensez pouvoir écrire du meilleur code que le prof ?
 Voici votre chance.
