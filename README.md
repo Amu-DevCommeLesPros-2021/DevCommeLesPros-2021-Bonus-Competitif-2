@@ -3,7 +3,7 @@
 Vous pensez pouvoir écrire du meilleur code que le prof ?
 Voici votre chance.
 J'ai écrit un programme pour résoudre le problème posé.
-Écrivez un programme qui affiche les bons résultats plus rapidement que le mien par une marge de 10% et c'est gagné.
+Écrivez un programme qui affiche les bons résultats 10% plus rapidement que le mien et c'est gagné.
 Si vous réussissez, ce sera *votre* programme que les étudiants auront à battre l'année prochaine !
 
 # Le problème
@@ -12,15 +12,15 @@ Ce problème est tiré du livre «[Doctor Ecco's cyberpuzzles](https://www.goodr
 
 Nous avons aujourd'hui les dénominations suivantes pour les pièces de monnaie de moins d'un euro : 1¢, 2¢, 5¢, 10¢, 20¢ et 50¢.
 Ces dénominations sont intuitives pour les humains.
-En effet, il nous est facile de calculer mentalement les pièces requises pour «donner le change».
+En effet, il nous est facile de calculer mentalement les pièces requises pour rendre la monnaie.
 Seulement... ces dénominations ne sont pas optimales.
-En effet, pour tout les prix compris entre 1¢ et 99¢ le nombre de pièces que nous auront à débourser en moyenne sera de 3,434343 pièces.
+En effet, pour tous les prix compris entre 1¢ et 99¢ le nombre de pièces que nous auront à débourser en moyenne sera de 3,434343 pièces.
 
 Il existe un ensemble de dénominations qui donne un meilleur résultat : 1¢, 2¢, 5¢, 11¢, 25¢ et 62¢.
-Pour ces dénominations, le nombre de pièces à donner en moyenne pour tout les prix compris entre 1¢ et 99¢ est de 3,1616 pièces.
+Pour ces dénominations, le nombre de pièces à donner en moyenne pour tous les prix compris entre 1¢ et 99¢ est de 3,1616 pièces.
 Évidement moins intuitifs à calculer pour des humains mais nous, nous  sommes des *programmeurs !*
 
-La question est la suivante : pour un ensemble de N dénominations {D<sub>1</sub>, ..., D<sub>N</sub>}, quelles sont les dénominations qui donnent en moyenne le plus petit nombre de pièces pour tout les prix compris entre 1¢ et 99¢ ?
+La question est la suivante : pour un ensemble de N dénominations {D<sub>1</sub>, ..., D<sub>N</sub>}, quelles sont les dénominations qui donnent en moyenne le plus petit nombre de pièces pour tous les prix compris entre 1¢ et 99¢ ?
 Calculez les ensembles D optimaux pour N = 3, 4, 5 et 6.
 
 Le calcul du nombre de pièces requises est fait de façon simple.
@@ -43,8 +43,8 @@ Voici les meilleurs ensembles pour N allant de 3 à 6 :
 | 5 | {1¢, 3¢, 7¢, 16¢, 40¢} | 3,49495 | 3612280 |
 | 6 | {1¢, 2¢, 5¢, 11¢, 25¢, 62¢} | 3,161616 | 67910864 |
 
-Pour obtenir tout ces résultats, mon programme s'exécute sur mon ordinateur pendant environ une minute trente secondes.
-Mais ce qui importe, c'est le temps relatif entre votre programme et le mien.
+Pour obtenir tous ces résultats, mon programme s'exécute sur mon ordinateur pendant environ une minute trente secondes.
+Mais ce qui importe c'est le temps relatif entre votre programme et le mien.
 
 # L'objectif
 
@@ -55,6 +55,6 @@ La cible `make compete` va compiler les deux programmes et comparer leur temps d
 Si votre temps d'exécution est en deçà du mien par au moins 10% (T<sub>challenger</sub> / T<sub>champion</sub> < 0,9), contactez-moi vite !
 Bien sur, je vais aussi vérifier l'intégrité de votre programme...
 
-Il n'y pas de limites à ce que vous pouvez faire, en autant que votre programme puisse être compilé avec un compilateur C.
+Il n'y pas de limites à ce que vous pouvez faire, tant que votre programme puisse être compilé avec un compilateur C.
 Je désire voir aussi une amélioration substantielle de la performance, pas seulement un programme qui «rogne» quelques millisecondes par-ci par-là, d'où le 10%.
 Sachez cependant que je n'ai pas particulièrement optimisé mon programme.
